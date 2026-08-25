@@ -1,0 +1,30 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*~
+
+# KiCad backup/autosave files
+*-bak
+*.bak
+_autosave-*
+*.kicad_pcb-bak
+*.kicad_sch-bak
+fp-info-cache
+
+# KiCad lock files
+*.lck
+
+# Project-local library cache (if using global libraries)
+*-cache.lib
+*-rescue.lib
+
+# Python files?
+__pycache__/
+*.pyc
+.vscode/
