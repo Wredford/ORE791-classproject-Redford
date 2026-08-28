@@ -240,7 +240,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "August 2026"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -488,7 +488,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "ProjectFile.kicad_pro",
+    "filename": "KiCad_Test_Redford.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -654,11 +654,22 @@
     "reuse_designators": true,
     "subpart_first_id": 65,
     "subpart_id_separator": 0,
-    "top_level_sheets": [],
-    "used_designators": "",
+    "top_level_sheets": [
+      {
+        "filename": "KiCad_Test_Redford.kicad_sch",
+        "name": "Root",
+        "uuid": "cf6c81b7-070c-490f-a2f3-ff7350302b5a"
+      }
+    ],
+    "used_designators": "R1,C1,#PWR1",
     "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "cf6c81b7-070c-490f-a2f3-ff7350302b5a",
+      "Root"
+    ]
+  ],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {
