@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "OPA128LM") (type "KiCad") (uri "${KIPRJMOD}/OPA128LM/footprints.pretty") (options "") (descr ""))
+)

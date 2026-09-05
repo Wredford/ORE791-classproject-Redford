@@ -1,0 +1,7 @@
+Reference,Quantity,Value,Component Type,Package / Footprint,Manufacturer Part Number,Supplier / DigiKey Number,Function in Circuit,Notes
+R1,1,100k,Potentiometer,through hole potentiometer,NEEDS SELECTION,NEEDS SELECTION,"Input V control","Many options exist (single-turn/multi-turn, panel vs PCB mount)"
+R2,1,5.6k,Resistor,0805,RC0805FR-075K6L,311-5.60KCRCT-ND,"Output V Control",
+R3,1,9.1k,Resistor,1206,RC1206FR-079K1L,311-9.10KFRTR-ND,"Numerator of gain equation",
+R4,1,1.01k,Resistor,1206,RT0603BRD071K01L,YAG4489TR-ND,"Denominator of gain equation",
+U1,1,OPA128LM,Op-Amp,TO-99,OPA128LM,NOT AVAILABLE,"Amplifies","Obsolete part"
+U2,1,ADS1220,ADC,16-TSSOP,ADS1220IPWR,296-39851-1-ND,"Analog to Digital Converter",
