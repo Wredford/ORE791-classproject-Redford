@@ -5,3 +5,5 @@ R3,1,9.1k,Resistor,1206,RC1206FR-079K1L,311-9.10KFRTR-ND,"Numerator of gain equa
 R4,1,1.01k,Resistor,1206,RT0603BRD071K01L,YAG4489TR-ND,"Denominator of gain equation",
 U1,1,OPA128LM,Op-Amp,TO-99,OPA128LM,NOT AVAILABLE,"Amplifies","Obsolete part"
 U2,1,ADS1220,ADC,16-TSSOP,ADS1220IPWR,296-39851-1-ND,"Analog to Digital Converter",
+C1,1,10uF,Capacitors,0805,CC0805MKX7R7BB106,311-3508-2-ND,Bulk decoupling - OPA128LM analog supply
+C2,1,10uF,Capacitors,0805,CC0805MKX7R7BB106,311-3508-2-ND,Bulk decoupling - OPA128LM analog supply

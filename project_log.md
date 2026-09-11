@@ -59,8 +59,34 @@
 ### Date
 -9/11
 
+# Capacitor Components identified on schematic annotations (screenshots folder)
+
+### RC Filter vs power rail decoupling (packet has detailed answers)
+- The schematic does not showa clear signal path RC filter
+- Power rail decoupling is needed to stabilize the Vin values for the OPAMP (and there is no clear resistor)
+- Capacitance in line with the ph probe would create a competing signal, which is completely unecessary
+
+### Decoupling interpretation
+- Power rail capacitors are C1 and C2. They stabilize the voltage that goes to the op amp by removing spikes
+- supply might spike when it gets turned on or if connections arent great or if the battery is in harsh condition
+- Settling the voltage makes it safer to put into the opamp
+- We dont want leakage current anywhere near the raw signal because it is such a low magnitude. And possibly also nowhere near the output signal cause its only getting amplified by 20x maximum.
+- we want to avoid creating unwanted stray capacitance between other components of the circuit, meaning we should isolate the main signal line as much as possible. 
+- We dont want capacitors in line with anything they dont need to be so that we dont accidentally induce Voltages where we dont want them. 
+
 # 5
 a) A signal path RC filter filters noise out of a signal that we want to read afterwards. The power rail decoupling is to filter noise out of the power rail BEFORE it goes into a sensitive component, such as an OPAMP.
 b) in packet
 c) 1/2piRC
-d) 
+d-j) in packet
+
+### BOM updates
+- Capacitors
+
+## I now understand unwanted Capacitor effects, and inductor common uses (back emf purposes)
+
+## I am still unsure about the Op-Amp configuration
+
+# Questions for class
+- Why are we guarding just the initial Op Amp input line and not also lines 2/6?
+- what is the relationship between lines 2 and 6 and how do they create the amplification?
