@@ -53,3 +53,14 @@
 # Questions for class
 - Will we be able to revise all components (including the resistors we just put in our BOM) later?
 - What was the output/test header (part 5 of worksheet) for?
+
+## Week 3: GitHub + KiCad version
+
+### Date
+-9/11
+
+# 5
+a) A signal path RC filter filters noise out of a signal that we want to read afterwards. The power rail decoupling is to filter noise out of the power rail BEFORE it goes into a sensitive component, such as an OPAMP.
+b) in packet
+c) 1/2piRC
+d) 
