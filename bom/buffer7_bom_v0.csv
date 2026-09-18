@@ -7,3 +7,11 @@ U1,1,OPA128LM,Op-Amp,TO-99,OPA128LM,NOT AVAILABLE,"Amplifies","Obsolete part"
 U2,1,ADS1220,ADC,16-TSSOP,ADS1220IPWR,296-39851-1-ND,"Analog to Digital Converter",
 C1,1,10uF,Capacitors,0805,CC0805MKX7R7BB106,311-3508-2-ND,Bulk decoupling - OPA128LM analog supply
 C2,1,10uF,Capacitors,0805,CC0805MKX7R7BB106,311-3508-2-ND,Bulk decoupling - OPA128LM analog supply
+J1,1,,BNC Connector,Through-Hole (panel/PCB),112538,ACX1050-ND,"pH probe input","50 Ohm, female jack, through-hole solder - Amphenol RF"
+J2,1,,Pin Header (3-pos),0.1" through-hole vertical,PBC03SAAN,S1011E-03-ND,"Output signal to microcontroller","ASSUMPTION: 3-position (e.g. Signal/GND/optional Vref) - confirm pin count needed"
+J3,1,,Power Header (4-pos R/A),0.118" (3.00mm) right-angle,0430450402,WM1820-ND,"Power input connector",""
+S1,1,,Switch DPDT Center-Off,Panel mount toggle,ATE2E-2M3-10-Z,563-1164-ND,"BAT TEST / power mode select","50mA @ 48V rating - well above ±9V need; DK-ND not fully confirmed, verify exact part page"
+BT1,1,9V,Battery Holder,Solder Lug,71,36-71-ND,"Battery mounting",""
+BT1,1,9V,Battery Clip,Wire Leads - 8in,81-8,36-81-8-ND,"Battery-to-board connection",""
+ENC1,1,,Enclosure,Diecast Aluminum,1550C,,"Physical housing","4.528in x 3.543in x 2.169in (115x90x55mm), cover included"
+H1,4,,Standoff,Hex #4-40 Aluminum 1/2in,8401,36-8401-ND,"PCB mounting in enclosure",""

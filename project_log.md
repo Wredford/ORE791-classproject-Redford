@@ -90,3 +90,34 @@ d-j) in packet
 # Questions for class
 - Why are we guarding just the initial Op Amp input line and not also lines 2/6?
 - what is the relationship between lines 2 and 6 and how do they create the amplification?
+
+## Week 4: buffer7 connector and bom v2
+
+### Date
+-9/18
+
+# Capacitor Components identified on schematic annotations, buffer7 notations shown in screenshot (images folder)
+
+### Component Questions
+-J1, a and b, BNC connection/connector can shield the signal from the ph probe
+-J2, c and d, BNC out is for routing the signal to an oscilliscope. Now it is a pinout instead because it will go to a microcontroller
+-J3, e and f, connects battery power and the rest of the circuit. the +-9V seems to come from the battery, which connects to J3
+-S1, g, controls the battery usage either to be on, off, or testing to see if the battery has over 11V of voltage difference. 
+-BAT TEST nodes, h, BAT TEST 1 and 2 are the nodes that the switch goes to when it wants to see if battery charge is more or less than 11V
+-Battery holder, Enclosure, Standoffs,lightpipe , i, they may or may not still be the same as before, depending on the design of the new pcb. it may need a smaller enclosure, not need a lightpipe, and need different standoffs.
+-microcontroller, j, a lot of the decisions still need to be made. such as how to handle output signal and battery test.
+
+### Component Necessary
+-J1, keep
+-J2, change
+-J3, keep?
+-S1, keep?
+-Battery holder, keep
+-BAT TEST nodes, keep
+-Enclosure, keep?
+-Standoffs, keep?
+-lightpipe, likely dont need anymore
+
+## Questions for class
+- Is it okay to decide to remove the lightpipe now? Or should I put it in the BOM and decide later? Does it matter as long as I know it is an option?
+- Arent we making a hat for the featherwing ("feather")? Wont that require a weird pinout/BNC structure that requires us to change out almost all these BNC/holder/standoff components?
