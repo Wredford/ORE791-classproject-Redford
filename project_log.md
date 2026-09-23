@@ -121,3 +121,25 @@ d-j) in packet
 ## Questions for class
 - Is it okay to decide to remove the lightpipe now? Or should I put it in the BOM and decide later? Does it matter as long as I know it is an option?
 - Arent we making a hat for the featherwing ("feather")? Wont that require a weird pinout/BNC structure that requires us to change out almost all these BNC/holder/standoff components?
+
+## Week 5: diodes and updating BOM
+
+### Date
+-9/23
+
+## Updates
+-BOM v0 updated
+-annotated sheet image
+-kicad image
+-updated schematic file
+
+## Purpose, forward or reverse biased
+-D1: LED diode, forward biased, for showing if the battery has enough charge or not
+-D2: Zener diode, reverse biased, for allowing or not allowing current to flow through the BAT TEST line (see D1)
+-D3: standard diode rated for high voltage, forward biased (ideally), Polarity Protection. Connects GND to +9V
+-D4: standard diode rated for high voltage, forward biased (ideally), Polarity Protection. Connects -9V to GND
+
+
+## Questions for class
+-what are our inputs and outputs regarding the microcontroller?
+-will we be able to get featherwing boards to use as a reference for making the board? (physically)
