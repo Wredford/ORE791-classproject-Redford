@@ -143,3 +143,24 @@ d-j) in packet
 ## Questions for class
 -what are our inputs and outputs regarding the microcontroller?
 -will we be able to get featherwing boards to use as a reference for making the board? (physically)
+
+### Date
+-10/2
+
+## Updates
+-BOM v6!
+-kicad schematic screenshot for week 6
+-updated schematic file (with mostly updated footprints)
+
+# ERC errors
+-77 errors
+-30 warnings
+-Connection errors are expected. Some footnote errors are also expected
+-Footprint errors will hopefully be resolved soon but some do not have templates online
+
+# BOM Updates
+-changed some part numbers
+
+# Questions
+-What do we do about footprints that dont exist?
+-How accurate does this all have to be right now? Will we have time to read datasheets soon? (op amp specifically)
