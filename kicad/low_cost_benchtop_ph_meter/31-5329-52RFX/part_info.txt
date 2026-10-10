@@ -1,0 +1,9 @@
+Manufacturer=Amphenol
+PartNumber=31-5329-52RFX
+PartCategory=Connector
+PackageCategory=Other
+PinCount=5
+Version=1.2
+Released=2021-12-11 05:38:40
+Downloaded=2026-10-09 22:23:09
+3D=Y

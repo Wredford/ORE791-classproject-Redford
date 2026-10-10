@@ -3,4 +3,6 @@
 	(lib (name "OPA128LM") (type "KiCad") (uri "${KIPRJMOD}/OPA128LM/2026-09-04_21-34-52.kicad_sym") (options "") (descr ""))
 	(lib (name "WM1820_Molex") (type "KiCad") (uri "${KIPRJMOD}/430450400/430450400.kicad_sym") (options "") (descr ""))
 	(lib (name "Pot_3296W") (type "KiCad") (uri "${KIPRJMOD}/3296W-1-104LF/3296W-1-104LF.kicad_sym") (options "") (descr ""))
+	(lib (name "BNCinp_31-5329") (type "KiCad") (uri "${KIPRJMOD}/31-5329-52RFX/KiCad/31-5329-52RFX.kicad_sym") (options "") (descr ""))
+	(lib (name "B29AP_Switch") (type "KiCad") (uri "${KIPRJMOD}/B29AP/2026-10-09_21-44-52.kicad_sym") (options "") (descr ""))
 )

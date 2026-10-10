@@ -3,4 +3,6 @@
 	(lib (name "OPA128LM") (type "KiCad") (uri "${KIPRJMOD}/OPA128LM/footprints.pretty") (options "") (descr ""))
 	(lib (name "WM1820_MOLEX") (type "KiCad") (uri "${KIPRJMOD}/430450400") (options "") (descr ""))
 	(lib (name "Pot_3296W") (type "KiCad") (uri "${KIPRJMOD}/3296W-1-104LF") (options "") (descr ""))
+	(lib (name "BNCinp_31-5329") (type "KiCad") (uri "${KIPRJMOD}/31-5329-52RFX/KiCad") (options "") (descr ""))
+	(lib (name "B29AP_Switch") (type "KiCad") (uri "${KIPRJMOD}/B29AP/footprints.pretty") (options "") (descr ""))
 )

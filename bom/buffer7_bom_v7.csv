@@ -2,15 +2,15 @@ Reference,Quantity,Value,Component Type,Package / Footprint,Manufacturer Part Nu
 R1,1,100k,Potentiometer,through hole potentiometer,3296W-1-104LF,3296W-104LF-ND,"Input V control","Many options exist (single-turn/multi-turn, panel vs PCB mount)"
 R2,1,5.6k,Resistor,0805,RC0805FR-075K6L,311-5.60KCRCT-ND,"Output V Control",
 R3,1,9.1k,Resistor,1206,RC1206FR-079K1L,311-9.10KFRTR-ND,"Numerator of gain equation",
-R4,1,1.01k,Resistor,1206,RT0603BRD071K01L,YAG4489TR-ND,"Denominator of gain equation",
-U1,1,OPA128LM,Op-Amp,TO-99,OPA128LM,NOT AVAILABLE,"Amplifies","Obsolete part"
+R4,1,1.01k,Resistor,0603,RT0603BRD071K01L,YAG4489TR-ND,"Denominator of gain equation",
+U1,1,OPA128LM,Op-Amp,TO-99,OPA128LM,NOT AVAILABLE,"Amplifies","Obsolete part/placeholder"
 U2,1,ADS1220,ADC,16-TSSOP,ADS1220IPWR,296-39851-1-ND,"Analog to Digital Converter",
 C1,1,10uF,Capacitors,0805,CC0805MKX7R7BB106,311-3508-2-ND,Bulk decoupling - OPA128LM analog supply
 C2,1,10uF,Capacitors,0805,CC0805MKX7R7BB106,311-3508-2-ND,Bulk decoupling - OPA128LM analog supply
 J1,1,,BNC Connector,Through-Hole (panel/PCB),031-5329-52RFX,ARF1688-ND,"pH probe input","50 Ohm, female jack, through-hole solder - Amphenol RF"
 J2,1,,Pin Header (3-pos),0.1" through-hole vertical,PBC03SAAN,S1011E-03-ND,"Output signal to microcontroller","ASSUMPTION: 3-position (e.g. Signal/GND/optional Vref) - confirm pin count needed"
 J3,1,,Power Header (4-pos R/A),0.118" (3.00mm) right-angle,0430450402,WM1820-ND,"Power input connector",""
-S1,1,,Switch DPDT Center-Off,Panel mount toggle,633-M2T29SA5W03,M2T29SA5W03,"BAT TEST / power mode select","50mA @ 48V rating - well above ±9V need; DK-ND not fully confirmed, verify exact part page"
+S1,1,,Switch DPDT Center-Off,Panel mount toggle,B29AP,B29AP-ND,"BAT TEST / power mode select",".4VA @ 28V rating; DK-ND not fully confirmed, verify exact part page"
 BT1,1,9V,Battery Holder,Solder Lug,71,36-71-ND,"Battery mounting",""
 BT1,1,9V,Battery Clip,Wire Leads - 8in,81-8,36-81-8-ND,"Battery-to-board connection",""
 ENC1,1,,Enclosure,Diecast Aluminum,1550C,,"Physical housing","4.528in x 3.543in x 2.169in (115x90x55mm), cover included"
