@@ -209,3 +209,35 @@ d-j) in packet
 ###Questions for class
 -What op amp are we actually using
 -Where do the ADC and featherboard pins come in
+
+### WEEK 8 Date
+-10/16
+
+## GND reference decision
+-a between batteries
+-b pin 1 or 13
+-c they should, yes. 
+-d because they are small voltages and need to be as accurate as possible.
+-e then the feather will read the signal incorrectly.
+-f negative just means the potential is flipped from ground. It should be just as negative as the positive is positive
+
+## Sensitive circuits and regulator noise
+-a Powering the analog amplifier from a noisy regulator can induce noise in the output signal, gnd, and adj wires.
+-b The lines most sensitive are the OPAMP in and out, and the ADC in
+-c The feather will not have robust power-noise requirements. The ADC needs to be very sensitive by design, and so should not be exposed to noise.
+-d To pick a regulator, noise is the primary concern for this circuit, but minimizing power variation is also key. Those tradeoffs would need to be considered.
+
+## Analog output
+-a Amplifier output range
+-b Because it will only be subjected to the output of the Op Amp, not the +-9V.
+-c Yes it could be negative. That is why we need the ADC, to convert it to digital.
+-d a single supply ADC only has a + OR a - rail. If the ADC input signal is varying to both + and -, the ADC needs to be able to have a negative and positive reference.
+-e Could use a level shift for the amplifier rails, and a virtual ground. Could also use a seperate supply. 
+
+## Power architecture decision
+- Approach 1 selected
+- Unsure of rails and power because we still need to select an op amp, and sufficient ADC.
+
+## Questions for class
+- Can we pick a new OPAMP that is going to actually be what we use
+- How are we handling the ADC, which is too large to fit on the current featherboard?
