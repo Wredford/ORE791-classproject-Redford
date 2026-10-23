@@ -241,3 +241,28 @@ d-j) in packet
 ## Questions for class
 - Can we pick a new OPAMP that is going to actually be what we use
 - How are we handling the ADC, which is too large to fit on the current featherboard?
+
+### WEEK 9 Date
+-10/23
+
+## Pre-ADC
+-a ph electrode range is about -420 mV to 420 mV based on the Nernst equation.
+-b gain can be 1, 10, or 20 from schematic. Mine is set at 10. 
+-c -8.4 to 8.4 V
+-d not for the feather input, no.
+-e ADC must output a positive DC voltage.
+-f The feather can handle 3.3 V. 
+-g I still need the ADC power information, and the ADC-featherboard communication information.
+
+## ERC
+-a 29 errors
+-b 39 warnings
+-c 10 fixed
+-d all the remaining errors and many of the warnings are due to hanging pins
+-e a few footprint warnings may need fixing.
+
+## High impedance layout concerns
+-a The ph input node
+-b isolated from everything but connecting (very quickly with minimal wire) to pin 3
+-c everything other than pin3
+-d footprints, physical placement, ADC connection, featherboard connection 

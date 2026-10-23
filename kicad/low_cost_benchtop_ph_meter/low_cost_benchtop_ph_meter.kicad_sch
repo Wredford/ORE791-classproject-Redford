@@ -4666,6 +4666,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "Polarity Protection Region"
 		(exclude_from_sim no)
@@ -4787,6 +4902,26 @@
 		)
 		(uuid "62ff41b7-303c-4f33-b78b-92d26aa3f286")
 	)
+	(text_box "Manual Offset to adjust before use"
+		(exclude_from_sim no)
+		(at 123.19 85.09 0)
+		(size 15.24 10.0822)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "94fd4585-4813-4ea2-b92e-6910c3a313fe")
+	)
 	(text_box "BNC input, footprint assigned"
 		(exclude_from_sim no)
 		(at 21.59 42.6846 0)
@@ -4826,6 +4961,26 @@
 			(justify left top)
 		)
 		(uuid "c1cbdc56-df87-489a-b5bf-30e6030219fd")
+	)
+	(text_box "add a small resistor here?\n"
+		(exclude_from_sim no)
+		(at 149.86 75.0078 0)
+		(size 8.89 10.0822)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d1ded795-5867-4fa4-94c5-ba1a48a37504")
 	)
 	(text_box "Not sure if this ADP is correct, but it does have a footprint"
 		(exclude_from_sim no)
@@ -4964,10 +5119,40 @@
 		(uuid "4cf4ef65-8d20-4eaf-96a3-6ebfa9708c95")
 	)
 	(junction
+		(at 133.35 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4d52802f-0407-45bf-b551-34683cc7e084")
+	)
+	(junction
+		(at 129.54 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "839a0f29-6a06-4461-b12f-7a69f5f161df")
+	)
+	(junction
 		(at 153.67 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8489064f-10bf-4467-9a2e-13462aa98622")
+	)
+	(junction
+		(at 158.75 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "978833c6-21b9-4596-b094-4cdd8efb84de")
+	)
+	(junction
+		(at 55.88 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a337d5be-c4c9-45b2-8320-767df7a6d833")
+	)
+	(junction
+		(at 142.24 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ac84b57c-469d-4c18-90c0-9321768bf325")
 	)
 	(junction
 		(at 165.1 138.43)
@@ -5014,6 +5199,16 @@
 			(type default)
 		)
 		(uuid "0f7bfd96-768d-43a9-8026-375cd6547c7f")
+	)
+	(wire
+		(pts
+			(xy 142.24 55.88) (xy 142.24 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fe78197-ce85-4392-bf6a-f7170dbac985")
 	)
 	(wire
 		(pts
@@ -5127,7 +5322,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 129.54) (xy 120.65 129.54)
+			(xy 137.16 129.54) (xy 133.35 129.54)
 		)
 		(stroke
 			(width 0)
@@ -5287,7 +5482,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 54.61) (xy 142.24 57.15)
+			(xy 142.24 54.61) (xy 142.24 55.88)
 		)
 		(stroke
 			(width 0)
@@ -5587,7 +5782,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 74.93) (xy 160.02 74.93)
+			(xy 146.05 74.93) (xy 162.56 74.93)
 		)
 		(stroke
 			(width 0)
@@ -5684,6 +5879,16 @@
 			(type default)
 		)
 		(uuid "bcded0cd-02d1-410d-900b-4e7d85d97e34")
+	)
+	(wire
+		(pts
+			(xy 133.35 129.54) (xy 120.65 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd06d9dd-2f5a-41e4-8fb8-3ce47e50b8ee")
 	)
 	(wire
 		(pts
@@ -6185,6 +6390,25 @@
 		)
 		(uuid "f8f9725e-16c6-4ff4-8cf0-389d1d7bc2ce")
 	)
+	(rule_area
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(polyline
+			(pts
+				(xy 26.67 73.66) (xy 33.02 73.66) (xy 33.02 76.2) (xy 26.67 76.2)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid "39bbd912-da82-48f0-94ae-78a328a6c343")
+		)
+	)
 	(symbol
 		(lib_id "power:+9V")
 		(at 55.88 119.38 270)
@@ -6337,6 +6561,85 @@
 			(project "low_cost_benchtop_ph_meter"
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 142.24 55.88 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "130c4f34-68a0-4558-aa62-96b7985f1bee")
+		(property "Reference" "#FLG05"
+			(at 140.335 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 138.43 55.8799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 142.24 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8fa6039b-bfa0-4493-a636-11006a2a4c34")
+		)
+		(instances
+			(project "low_cost_benchtop_ph_meter"
+				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -6499,7 +6802,7 @@
 	)
 	(symbol
 		(lib_id "power:+9V")
-		(at 240.03 135.89 90)
+		(at 240.03 135.89 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6507,10 +6810,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3528260f-fad5-4f62-9203-bf42ce549211")
 		(property "Reference" "#PWR011"
-			(at 243.84 135.89 0)
+			(at 236.22 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6521,7 +6823,7 @@
 			)
 		)
 		(property "Value" "+9V"
-			(at 238.76 133.35 90)
+			(at 241.3 132.842 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6726,6 +7028,84 @@
 			(project "low_cost_benchtop_ph_meter"
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 133.35 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "54de0e0b-8b22-4fdb-a8d6-daf9e0532424")
+		(property "Reference" "#FLG01"
+			(at 133.35 127.635 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 133.35 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 133.35 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6d552290-5175-4b66-8c26-98af89000953")
+		)
+		(instances
+			(project "low_cost_benchtop_ph_meter"
+				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -7004,7 +7384,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "430450400:CONN_SD-43045-001_04_MOL"
+		(property "Footprint" "WM1820_MOLEX:CONN_SD-43045-001_04_MOL"
 			(at 137.16 127 0)
 			(hide yes)
 			(show_name no)
@@ -7555,7 +7935,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "3296W-1-104LF:TRIM_3296W-1-104LF"
+		(property "Footprint" "Pot_3296W:TRIM_3296W-1-104LF"
 			(at 73.66 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -7845,6 +8225,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 129.54 132.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "984b1bcd-e1b7-48a1-b30b-f186e55c11e1")
+		(property "Reference" "#FLG02"
+			(at 129.54 130.175 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 129.54 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 129.54 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "41ff6620-b06c-4174-8a5b-5a3dfc0f0413")
+		)
+		(instances
+			(project "low_cost_benchtop_ph_meter"
+				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "OPA128LM:OPA128LM")
 		(at 36.83 69.85 0)
 		(unit 1)
@@ -7946,7 +8404,7 @@
 	)
 	(symbol
 		(lib_id "power:+9V")
-		(at 240.03 140.97 90)
+		(at 240.03 140.97 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7956,7 +8414,7 @@
 		(dnp no)
 		(uuid "b8b27da0-07f7-4e58-b4bb-b313b0180e77")
 		(property "Reference" "#PWR012"
-			(at 243.84 140.97 0)
+			(at 236.22 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7967,7 +8425,7 @@
 			)
 		)
 		(property "Value" "-9V"
-			(at 242.824 140.97 90)
+			(at 245.618 140.97 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8557,7 +9015,7 @@
 	)
 	(symbol
 		(lib_id "Analog_ADC:ADS1220xPW")
-		(at 186.69 48.26 0)
+		(at 180.34 80.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8567,8 +9025,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7399bb0-f563-44d2-832f-4c3b3a672473")
-		(property "Reference" "U2"
-			(at 191.3733 33.02 0)
+		(property "Reference" "U2ADC"
+			(at 185.0233 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8579,7 +9037,7 @@
 			)
 		)
 		(property "Value" "ADS1220xPW"
-			(at 191.3733 35.56 0)
+			(at 185.0233 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8590,7 +9048,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
-			(at 193.04 34.29 0)
+			(at 186.69 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8602,7 +9060,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ads1220.pdf"
-			(at 173.99 38.1 0)
+			(at 167.64 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8613,7 +9071,7 @@
 			)
 		)
 		(property "Description" "Low-power, quad-input, 24-bit analog to digital converter, integrated temperature sensor, SPI interface, TSSOP-16 package"
-			(at 186.69 48.26 0)
+			(at 180.34 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8674,7 +9132,85 @@
 		(instances
 			(project "low_cost_benchtop_ph_meter"
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
-					(reference "U2")
+					(reference "U2ADC")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 55.88 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea3b5daa-5b13-4417-a721-676f59f6cb09")
+		(property "Reference" "#FLG03"
+			(at 55.88 117.475 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 55.88 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 55.88 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "50abb2cd-2b05-44bc-b8c0-e2ad6f80c6ba")
+		)
+		(instances
+			(project "low_cost_benchtop_ph_meter"
+				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -8879,6 +9415,84 @@
 			(project "low_cost_benchtop_ph_meter"
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
 					(reference "S1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 158.75 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8924037-c7a0-4d30-b669-3f60e3bb4c0c")
+		(property "Reference" "#FLG04"
+			(at 158.75 52.705 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 158.75 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 158.75 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "09c3c7fa-e92f-4f49-b951-9d06c5097caf")
+		)
+		(instances
+			(project "low_cost_benchtop_ph_meter"
+				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
