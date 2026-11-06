@@ -266,3 +266,12 @@ d-j) in packet
 -b isolated from everything but connecting (very quickly with minimal wire) to pin 3
 -c everything other than pin3
 -d footprints, physical placement, ADC connection, featherboard connection 
+
+### WEEK 10 Date
+-11/06
+
+## Changes
+- Added test probes
+- Added every component to the PCB editor, and organized in a way that makes sense
+- Made a screenshot with the area that needs to be protected outlined in blue
+- did NOT route copper traces. Steps 12-17 of Week10 packet will be done after the ADC is inserted in week 11.
